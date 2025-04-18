@@ -1,0 +1,116 @@
+/* General styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f4f4f4, #dfe6e9);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Game container */
+.RPS {
+    max-width: 450px;
+    margin: 50px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.RPS:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading */
+.heading h1 {
+    color: #333;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Buttons */
+.buttons button {
+    font-size: 3rem;
+    padding: 12px 18px;
+    margin: 12px;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buttons button:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+button:active{
+    background-color: #0056a9;
+}
+
+/* Choice display */
+.choiceDisplay p {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #444;
+    font-weight: 500;
+}
+
+/* Score board */
+.scoreBoard p {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #222;
+    text-transform: uppercase;
+}
+
+/* Player and Computer score styles */
+.scoreBoard #playerScoreDisplay {
+    color: #28a745;
+    font-size: 24px;
+}
+
+.scoreBoard span {
+    color: red;
+    font-size: 24px;
+}
+#resultDisplay {
+    font-size: 3rem;
+}
+/* Special text colors */
+.redText {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.blueText {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.greenText {
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* Animation for the game container */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.RPS {
+    animation: fadeIn 0.5s ease-in-out;
+}
