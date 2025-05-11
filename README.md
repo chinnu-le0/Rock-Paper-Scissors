@@ -5,3 +5,4 @@ This simple Rock Paper Scissors game takes input from the user, compares it with
 
 Would you like to try it out?
 
+ https://gowritharun-songa.github.io/Rock-Paper-Scissors/
